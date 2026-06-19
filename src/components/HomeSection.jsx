@@ -4,7 +4,7 @@ export const HomeSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col mt-10 items-center justify-center px-4"
+      className="relative min-h-screen flex flex-col items-center justify-start md:justify-center px-4 pt-24 sm:pt-28 md:pt-10"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
