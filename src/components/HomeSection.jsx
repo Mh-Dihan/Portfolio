@@ -8,7 +8,7 @@ export const HomeSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
-          
+
           <div className="flex justify-center">
             <img
               src="/Projects/MyPic-2.jpg" // <-- put your image file path here
@@ -17,28 +17,28 @@ export const HomeSection = () => {
             />
           </div>
 
-          
+
           <h1 className="text-2xl md:text-4xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hi, I am</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              
+            <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-1">
+
               Muhaiminul Hasan
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              
+
               Dihan
             </span>
           </h1>
 
-          
+
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I am a Final-year student in [ECE (electrical and computer science engineering)] at North South University with strong 
-            project experience in web development and 3D data research. Passionate about learning new
-            technologies and building real-world solutions. Seeking an opportunity to grow as a
-            software/web developer in a dynamic and innovative environment.
+            Graduate in Electrical and Computer Engineering (ECE) with a major in Computer Science and Engineering (CSE) from North South University.
+            Possessing hands-on experience in web development and 3D data research, with a strong interest in technology and innovation.
+            Eager to explore opportunities across software engineering, IT, research, data analysis, system administration, technical operations, and other emerging technology domains.
+            Committed to continuous learning, professional growth, and delivering impactful solutions in dynamic work environments.
           </p>
 
-         
+
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               Check My Work
@@ -47,7 +47,7 @@ export const HomeSection = () => {
         </div>
       </div>
 
-      
+
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary" />

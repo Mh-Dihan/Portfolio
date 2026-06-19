@@ -3,25 +3,25 @@ import { cn } from "@/lib/utils";
 
     const skills = [
     //Frontend
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "JavaScript", level: 80, category: "frontend" },
-    { name: "React", level: 85, category: "frontend" },
-    { name: "TypeScript", level: 65, category: "frontend" },
-    { name: "Tailwind CSS", level: 85, category: "frontend" },
-    { name: "Next.js", level: 80, category: "frontend" },
+    { name: "HTML/CSS", category: "frontend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+    { name: "JavaScript", category: "frontend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "React", category: "frontend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "TypeScript", category: "frontend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "Tailwind CSS", category: "frontend", logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
+    { name: "Next.js", category: "frontend", logo: "https://cdn.simpleicons.org/nextdotjs/000000", logoClass: "dark:invert" },
 
     //Backend
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express", level: 75, category: "backend" },
-    { name: "MongoDB", level: 70, category: "backend" },
-    { name: "Mysql", level: 65, category: "backend" },
-    { name: "SQL", level: 60, category: "backend" },
+    { name: "Node.js", category: "backend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { name: "Express", category: "backend", logo: "/skill-logos/express.svg" },
+    { name: "MongoDB", category: "backend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "Mysql", category: "backend", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { name: "SQL", category: "backend", logo: "https://cdn.simpleicons.org/sqlite/003B57" },
 
     //Tools
-    { name: "Git/GitHub", level: 80, category: "tools" },
-    { name: "MS_Word", level: 80, category: "tools" },
-    { name: "PowerPoint", level: 85, category: "tools" },
-    { name: "VS Code", level: 90, category: "tools" },
+    { name: "Git/GitHub", category: "tools", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", logoClass: "dark:invert" },
+    { name: "MS Word", category: "tools", logo: "/skill-logos/ms-word.svg" },
+    { name: "PowerPoint", category: "tools", logo: "/skill-logos/powerpoint.svg" },
+    { name: "VS Code", category: "tools", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
     ];
 
     const categories = ["all","frontend","backend","tools"]
@@ -60,24 +60,25 @@ export const SkillsSection = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredskills .map((skill,key) => (
-                    <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
-                        <div className="text-left mb-4">
-                            <h3 className="font-semibold text-lg">
-                                {skill.name}
-
-                            </h3>
+                    <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover border border-border/50">
+                        <div className="flex items-center gap-4 text-left">
+                            <div className="flex size-14 shrink-0 items-center justify-center rounded-md bg-secondary/60 p-2.5 ring-1 ring-border/60">
+                                <img
+                                    src={skill.logo}
+                                    alt={`${skill.name} logo`}
+                                    className={cn("h-10 w-10 object-contain", skill.logoClass)}
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-lg leading-tight">
+                                    {skill.name}
+                                </h3>
+                                <p className="mt-1 text-sm text-muted-foreground capitalize">
+                                    {skill.category}
+                                </p>
+                            </div>
                         </div>
-                        <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                        
-                        <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5_ease-out]" 
-                        style={{width: skill.level + "%"}}>
-
-                         
-                          </div>
-                        </div>
-                        <div className="text-right mt-1">
-                            <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                          </div>
                     </div>
                 ))}
 

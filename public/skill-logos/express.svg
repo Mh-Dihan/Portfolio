@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Express logo</title>
+  <rect width="64" height="64" rx="14" fill="#111827"/>
+  <path fill="#ffffff" d="M12 35.4c0-9.6 6.8-16.9 16.2-16.9 9.9 0 15.3 7.4 15.3 16.7v1.8H19.2c.8 4.9 4.4 8 9.6 8 4.1 0 6.4-1.6 8.7-4.7l5.6 3.5c-3.2 5-7.8 7.5-14.3 7.5C18.7 51.3 12 44.4 12 35.4Zm7.3-4.1h16.2c-.6-4.2-3.4-6.8-7.6-6.8-4.2 0-7.1 2.6-7.9 6.8Z"/>
+  <path fill="#ffffff" d="M43.7 50.4 51 40.3l-7-9.8h7.8l3.1 4.9 3.1-4.9h7.3l-7 9.7 7.4 10.2h-7.8l-3.6-5.4-3.6 5.4h-7Z" transform="translate(-4)"/>
+</svg>

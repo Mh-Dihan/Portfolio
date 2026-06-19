@@ -1,10 +1,10 @@
-import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
+import { MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 
 export const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="py-24 px-4 relative bg-secondary/30"
+      className="py-24 px-4 relative bg-secondary/30 scroll-mt-24"
     >
       <div className="container mx-auto max-w-5xl">
         {/* Section Title */}
@@ -12,7 +12,7 @@ export const ContactSection = () => {
           Get In <span className="text-primary">Touch</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-12xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
           Let’s connect! Whether you have an idea, a question, or just want to chat,
           feel free to reach out. I’m always excited to meet new people, share ideas,
           and work on cool projects together. Drop me a message anytime!
@@ -28,7 +28,7 @@ export const ContactSection = () => {
         
             <div className="space-y-6">
               
-              <div className="flex justify-center space-x-80 text-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-center">
                 {/* Email */}
                 <div>
                   <h4 className="font-medium">Email</h4>
@@ -44,7 +44,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a
-                    href="tel:+8810632200741"
+                    href="tel:+8801632200741"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     01632200741
